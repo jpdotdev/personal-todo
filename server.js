@@ -1,7 +1,6 @@
 // delcare variables that we need for back-end
 const express = require('express');
 const app = express();
-const PORT = 8500;
 const mongoose = require('mongoose');
 require('dotenv').config();
 const TodoTask = require('./models/todo');
@@ -83,4 +82,4 @@ app
         });
     });
 
-app.listen(process.env.PORT || PORT, () => console.log(`Server is running on port ${PORT}`));
+app.listen(process.env.PORT || 8500, () => console.log(`Server is running on port ${PORT}`));
