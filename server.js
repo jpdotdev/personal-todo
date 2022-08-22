@@ -83,4 +83,4 @@ app
         });
     });
 
-app.listen(process.env.PORT || 8500, () => console.log(`Server is running on port ${PORT}`));
+app.listen(process.env.PORT || PORT, () => console.log(`Server is running on port ${PORT}`));
